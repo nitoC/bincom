@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Montserrat+Subrayada&family=Oswald&family=Poppins:wght@100&display=swap');
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+input, button, textarea{
+  font-size: inherit;
+  border:none;
+}
+.App {
+  text-align: center;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+
+.loading{
+  position: fixed;
+  inset:0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.notloading{
+  display: none;
+}
+.loading h1{
+ color:tomato;
+ font-family: 'Montserrat Subrayada', sans-serif;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: tomato;
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  position: fixed;
+  z-index: 1;
+}
+.main{
+  
+}
+.intro-wrapper{
+  display: flex;
+  height: 90vh;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:4rem 0rem;
+  width:50%;
+  height: 100%;
+}
+.intro-heading{
+  font-family: 'Lilita One', cursive;
+  font-size: 3rem;
+  color:tomato;
+}
+.intro-text{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.intro-image{
+  position: relative;
+  z-index: -1;
+  width: 50%;
+  overflow: hidden;
+  background-color: tomato;
+}
+.banner{
+  width:100%;
+  object-fit:cover;
+}
+.banner-style{
+}
+.section{
+  padding:4rem 2rem;
+}
+.section-2{
+  background-color: lightgray;
+  min-height: 400px;
+
+}
+.divider{
+
+  height: 400px;
+  background-attachment: fixed;
+  background-image: url('./assets/images/chinedu.jpeg');
+  background-color: rgba(0, 0, 255, 0.486);
+  background-blend-mode: overlay;
+  background-position: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-header{
+  font-size: 3rem;
+  width:fit-content;
+  margin: auto;
+  color: white;
+}
+.section-2-text{
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+.section-heading{
+  font-weight: bolder;
+}
+.App-link {
+  color: #61dafb;
+}
+.section-3{
+  background-color: lightgray;  
+}
+.contents{
+  padding:2rem;
+  display: flex;
+  align-items: center;
+  gap:1.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+ul{
+  list-style-type: none;
+  padding: 2rem;
+}
+ul li{
+  padding: .7rem;
+  font-weight: bold;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color:tomato;
+}
+.logos{
+  width:120px;
+  margin: auto;
+  overflow: hidden;
+  height: 40px;
+  
+}
+.each-content{
+  min-height: 300px;
+  padding: 2rem;
+  width: calc(700px + 1vw);
+  box-shadow: 1px 1px 3px -1px black ;
+  border-radius: 8px;
+  background-color: rgba(245, 245, 220, 0.418);
+}
+.content-wrapper{
+  margin: auto;
+  width:100%;
+  width:80vw;
+}
+.slide{
+  overflow: hidden;
+}
+.section-5-content{
+gap: 1rem;
+width: fit-content;
+  padding: 2rem;
+  display: flex;
+  margin: auto;
+}
+.img1{
+  width:300px;
+}
+.roles ul li{
+  color:rgb(110, 104, 104);
+}
+.logo-c-img{
+  width:100%;
+}
+.section-5{
+  background-color: rgb(41, 27, 27);
+}
+.section-5 .section-heading{
+  color: white;
+}
+.footer{
+  min-height: 50vh;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding: 2rem;
+}
+.email, .mobile{
+  text-align: left;
+  padding: 2rem;
+}
+.e-label, .m-label{
+  text-align: left;
+padding: 2rem; 
+font-family: 'Lilita One'; 
+color: tomato;
+
+}
+.copy{
+  position: absolute;
+  bottom: 0;
+  left:-1rem;
+  background-color: rgba(145, 127, 127, 0.123);
+  text-align: center;
+width: 100vw;
+padding: .5rem;
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width:1030px) {
+  :root{
+    font-size: calc(9px + 1vw );
+  }
+  .intro-wrapper{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    height: 400px;
+  }
+  .intro{
+    width: 100%;
+    padding: .5rem;
+    
+  }
+  .intro-image{
+    width: 100%;
+    display: none;
+  }
+  .email,.mobile{
+    font-size: calc(16px + .5vw);
+    padding: 2rem .5rem;
+  }
+}
+@media (max-width:1030px) {
+  .intro{
+    background-color: lightgoldenrodyellow;
+  }
+  .intro-heading{
+    font-size: calc(23px + 1vw);
+  }
+}
